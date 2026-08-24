@@ -29,9 +29,9 @@ app.get("/",(qer,res)=>{
 
    mongoose.connect(process.env.MONGODB_URI).then(()=>{
     console.log("conected to the database")
-    app.listen(PORT,()=>{
-    console.log(`server is runngi on port: http://localhost:${PORT}`)
-})
+//     app.listen(PORT,()=>{
+//     console.log(`server is runngi on port: http://localhost:${PORT}`)
+// })
    }).catch((error=>{
     console.error(error.message);
     
